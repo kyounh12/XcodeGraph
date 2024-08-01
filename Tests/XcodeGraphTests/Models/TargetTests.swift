@@ -25,13 +25,26 @@ final class TargetTests: XCTestCase {
                 "d",
                 "s",
                 "intentdefinition",
-                "xcmappingmodel",
                 "metal",
                 "mlmodel",
-                "docc",
                 "playground",
                 "rcproject",
                 "mlpackage",
+                "docc",
+                "xcmappingmodel",
+            ]
+        )
+    }
+    
+    func test_validSourceCompatibleFolderExtensions() {
+        XCTAssertEqual(
+            Target.validSourceCompatibleFolderExtensions,
+            [
+                "playground",
+                "rcproject",
+                "mlpackage",
+                "docc",
+                "xcmappingmodel",
             ]
         )
     }
